@@ -1,6 +1,6 @@
 name: "Git Pull Tool"
 description: "Pulls git repositories into a folder."
-version: "1.0.33"
+version: "1.0.34"
 slug: "git-pull-tool"
 init: false
 boot: "manual"
