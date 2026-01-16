@@ -1,0 +1,41 @@
+name: "Git Pull Tool"
+description: "Pulls git repositories into a folder."
+version: "1.0.33"
+slug: "git-pull-tool"
+init: false
+boot: "manual"
+hassio_api: true
+hassio_role: manager
+homeassistant_api: true
+map:
+  - type: addons
+    read_only: false
+  - type: all_addon_configs
+    read_only: false
+  - type: homeassistant_config
+    read_only: false
+    path: /config
+  - type: ssl
+    read_only: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+options:
+  general_private_key: null
+  general_key_protocol: "rsa"
+  repos:
+  - repository: null
+    git_branch: master
+    git_remote: origin
+    destination_dir: null
+    private_key: null
+schema:
+  general_private_key: str?
+  general_key_protocol: list(rsa, dsa, ecdsa, ed25519)
+  repos:
+  - repository: str
+    git_branch: str
+    git_remote: str
+    destination_dir: str
+    private_key: str?
