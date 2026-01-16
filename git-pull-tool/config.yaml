@@ -7,6 +7,7 @@ boot: "manual"
 hassio_api: true
 hassio_role: manager
 homeassistant_api: true
+image: "ghcr.io/lavir/git-pull-tool-{arch}"
 map:
   - type: addons
     read_only: false
@@ -20,7 +21,6 @@ map:
 arch:
   - aarch64
   - amd64
-  - armhf
 options:
   general_private_key: null
   general_key_protocol: "rsa"
