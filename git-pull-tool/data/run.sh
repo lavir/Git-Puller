@@ -15,6 +15,7 @@ bashio::log.info "GENERAL_PRIVATE_KEY is set to ${GENERAL_PRIVATE_KEY}"
 bashio::log.info "GENERAL_KEY_PROTOCOL is set to ${GENERAL_KEY_PROTOCOL}"
 bashio::log.info "REPOSITORIES is set to ${REPOSITORIES}"
 
+# Fork from https://github.com/home-assistant/addons/tree/master/git_puller/data/run.sh
 function add_gen_ssh_key {
     bashio::log.info "[Info] Start adding SSH key"
     mkdir -p "${HOME}/.ssh"
