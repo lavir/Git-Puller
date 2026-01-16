@@ -11,7 +11,7 @@ GENERAL_PRIVATE_KEY=$(bashio::config 'general_private_key')
 GENERAL_KEY_PROTOCOL=$(bashio::config 'general_key_protocol')
 REPOSITORIES=$(bashio::config 'repos')
 
-bashio::log.info "GENERAL_PRIVATE_KEY is set to ${GENERAL_PRIVATE_KEY}"
+# bashio::log.info "GENERAL_PRIVATE_KEY is set to ${GENERAL_PRIVATE_KEY}"
 bashio::log.info "GENERAL_KEY_PROTOCOL is set to ${GENERAL_KEY_PROTOCOL}"
 bashio::log.info "REPOSITORIES is set to ${REPOSITORIES}"
 
